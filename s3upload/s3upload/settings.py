@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'restapi',
 ]
 
 MIDDLEWARE = [
@@ -72,8 +73,8 @@ WSGI_APPLICATION = 's3upload.wsgi.application'
 AWS_ACCESS_KEY_ID = 'AKIA6RDYRNKZB6OVRDXD'
 AWS_SECRET_ACCESS_KEY = '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'
 
-AWS_STORAGE_BUCKET_NAME = 'tw-bucket-private'
-AWS_S3_REGION_NAME = 'us-east-2'
+AWS_STORAGE_BUCKET_NAME = 'tw-bucket-public'
+AWS_S3_REGION_NAME = 'us-east-1'
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
